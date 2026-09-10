@@ -1,0 +1,13 @@
+void main() {
+  Map<String, String> favouriteColors = {
+    "Amit": "Blue",
+    "Rahul": "Red",
+    "Priya": "Pink",
+    "Neha": "Purple",
+    "Karan": "Green",
+  };
+
+  favouriteColors.putIfAbsent("MyName", () => "Black");
+
+  print(favouriteColors);
+}
