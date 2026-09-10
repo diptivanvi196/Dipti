@@ -1,0 +1,20 @@
+void printMarks({
+  required int programming,
+  required int mathematics,
+  required int database,
+  required int communication,
+}) {
+  print("Programming: $programming");
+  print("Mathematics: $mathematics");
+  print("Database: $database");
+  print("Communication: $communication");
+}
+
+void main() {
+  printMarks(
+    programming: 85,
+    mathematics: 78,
+    database: 91,
+    communication: 88,
+  );
+}
