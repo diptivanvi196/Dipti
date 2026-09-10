@@ -1,0 +1,9 @@
+void main() {
+  String? careerGoal;
+
+  print("Career goal: ${careerGoal ?? "Not decided yet"}");
+
+  careerGoal ??= "Software Developer";
+
+  print("My actual career goal: $careerGoal");
+}
