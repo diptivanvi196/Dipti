@@ -1,0 +1,27 @@
+void main() {
+  Set<String> myHobbies = {
+    "Coding",
+    "Reading",
+    "Gaming",
+    "Music"
+  };
+
+  Set<String> friendHobbies = {
+    "Gaming",
+    "Cricket",
+    "Music",
+    "Photography"
+  };
+
+  print("My hobbies: $myHobbies");
+  print("Friend's hobbies: $friendHobbies");
+
+  print("\nUnion:");
+  print(myHobbies.union(friendHobbies));
+
+  print("\nIntersection:");
+  print(myHobbies.intersection(friendHobbies));
+
+  print("\nDifference:");
+  print(myHobbies.difference(friendHobbies));
+}
