@@ -1,0 +1,13 @@
+void main() {
+  Map<String, String> timetable = {
+    "Monday": "Dart Programming",
+    "Tuesday": "Mathematics",
+    "Wednesday": "Database",
+    "Thursday": "Computer Networks",
+    "Friday": "Web Development",
+  };
+
+  timetable.forEach((day, subject) {
+    print("$day: $subject");
+  });
+}
