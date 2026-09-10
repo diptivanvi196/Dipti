@@ -1,0 +1,9 @@
+void main() {
+  int rollNumber = 25; // Replace with your real roll number
+  int number = 2;
+
+  while (number <= rollNumber) {
+    print(number);
+    number += 2;
+  }
+}
