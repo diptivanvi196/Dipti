@@ -1,0 +1,11 @@
+late String collegeName;
+
+void assignCollegeName() {
+  collegeName = "ABC College";
+}
+
+void main() {
+  assignCollegeName();
+
+  print("My college name is: $collegeName");
+}
