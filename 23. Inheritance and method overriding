@@ -1,0 +1,27 @@
+class Person {
+  String name;
+
+  Person(this.name);
+
+  void introduce() {
+    print("Hello, my name is $name.");
+  }
+}
+
+class Teacher extends Person {
+  String favouriteSubject;
+
+  Teacher(String name, this.favouriteSubject) : super(name);
+
+  @override
+  void introduce() {
+    print("My name is $name.");
+    print("My favourite teacher's subject is $favouriteSubject.");
+  }
+}
+
+void main() {
+  Teacher teacher = Teacher("Rahul", "Mathematics");
+
+  teacher.introduce();
+}
