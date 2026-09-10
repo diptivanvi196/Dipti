@@ -1,0 +1,29 @@
+void main() {
+  String day = "Thursday";
+
+  switch (day) {
+    case "Monday":
+      print("Monday, September 7, 2026 - Start the week with energy!");
+      break;
+    case "Tuesday":
+      print("Tuesday, September 8, 2026 - Keep working hard!");
+      break;
+    case "Wednesday":
+      print("Wednesday, September 9, 2026 - Halfway through the week!");
+      break;
+    case "Thursday":
+      print("Thursday, September 10, 2026 - Keep going!");
+      break;
+    case "Friday":
+      print("Friday, September 11, 2026 - Finish the week strongly!");
+      break;
+    case "Saturday":
+      print("Saturday, September 12, 2026 - Enjoy your weekend!");
+      break;
+    case "Sunday":
+      print("Sunday, September 13, 2026 - Relax and prepare for Monday!");
+      break;
+    default:
+      print("Invalid day.");
+  }
+}
