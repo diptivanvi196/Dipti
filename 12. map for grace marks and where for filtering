@@ -1,0 +1,18 @@
+void main() {
+  List<int> marks = [45, 67, 82, 49, 76, 55];
+
+  print("Original marks:");
+  print(marks);
+
+  // Add 5 grace marks to every subject
+  List<int> graceMarks = marks.map((mark) => mark + 5).toList();
+
+  print("\nMarks after adding 5 grace marks:");
+  print(graceMarks);
+
+  // Filter out subjects where original marks were below 50
+  List<int> filteredMarks = marks.where((mark) => mark >= 50).toList();
+
+  print("\nMarks after filtering below 50:");
+  print(filteredMarks);
+}
