@@ -1,0 +1,32 @@
+class LowAttendanceException implements Exception {
+  String studentName;
+  double attendancePercentage;
+
+  LowAttendanceException(
+      this.studentName, this.attendancePercentage);
+
+  @override
+  String toString() {
+    return "LowAttendanceException: $studentName has only "
+        "$attendancePercentage% attendance.";
+  }
+}
+
+void checkAttendance(String name, double attendance) {
+  if (attendance < 75) {
+    throw LowAttendanceException(name, attendance);
+  }
+
+  print("$name has sufficient attendance.");
+}
+
+void main() {
+  String name = "Rahul";
+  double attendance = 68.5; // Hypothetical attendance
+
+  try {
+    checkAttendance(name, attendance);
+  } catch (e) {
+    print(e);
+  }
+}
