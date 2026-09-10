@@ -1,0 +1,7 @@
+double calculateArea(double radius) => 3.14159 * radius * radius;
+
+void main() {
+  print("Area of circle with radius 3: ${calculateArea(3)}");
+  print("Area of circle with radius 5: ${calculateArea(5)}");
+  print("Area of circle with radius 7: ${calculateArea(7)}");
+}
