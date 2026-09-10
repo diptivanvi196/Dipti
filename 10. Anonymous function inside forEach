@@ -1,0 +1,7 @@
+void main() {
+  String name = "Rahul";
+
+  name.split('').forEach((letter) {
+    print(letter);
+  });
+}
