@@ -1,0 +1,9 @@
+void main() {
+  var name = "Rahul";
+  final rollNumber = 25;
+  const city = "Ahmedabad";
+
+  print("Name: $name");
+  print("Roll Number: $rollNumber");
+  print("City: $city");
+}
