@@ -1,0 +1,24 @@
+void main() {
+  List<String> movies = [
+    "Inception",
+    "Interstellar",
+    "Avengers",
+    "3 Idiots",
+    "The Dark Knight"
+  ];
+
+  print("Original list:");
+  print(movies);
+
+  movies.add("Dangal");
+  print("\nAfter add:");
+  print(movies);
+
+  movies.remove("Avengers");
+  print("\nAfter remove:");
+  print(movies);
+
+  movies.sort();
+  print("\nAfter sort:");
+  print(movies);
+}
