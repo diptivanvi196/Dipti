@@ -1,0 +1,21 @@
+class Book {
+  String title;
+
+  // Default constructor
+  Book({this.title = "The Alchemist"});
+
+  // Named constructor
+  Book.recentlyRead() : title = "Atomic Habits";
+
+  void display() {
+    print("Book Title: $title");
+  }
+}
+
+void main() {
+  Book book1 = Book();
+  book1.display();
+
+  Book book2 = Book.recentlyRead();
+  book2.display();
+}
