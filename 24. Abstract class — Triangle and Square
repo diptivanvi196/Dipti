@@ -1,0 +1,51 @@
+abstract class Shape {
+  double area();
+  double perimeter();
+}
+
+class Square extends Shape {
+  double side;
+
+  Square(this.side);
+
+  @override
+  double area() {
+    return side * side;
+  }
+
+  @override
+  double perimeter() {
+    return 4 * side;
+  }
+}
+
+class Triangle extends Shape {
+  double a;
+  double b;
+  double c;
+  double height;
+
+  Triangle(this.a, this.b, this.c, this.height);
+
+  @override
+  double area() {
+    return (b * height) / 2;
+  }
+
+  @override
+  double perimeter() {
+    return a + b + c;
+  }
+}
+
+void main() {
+  Square square = Square(5);
+
+  print("Square Area: ${square.area()}");
+  print("Square Perimeter: ${square.perimeter()}");
+
+  Triangle triangle = Triangle(3, 4, 5, 4);
+
+  print("\nTriangle Area: ${triangle.area()}");
+  print("Triangle Perimeter: ${triangle.perimeter()}");
+}
