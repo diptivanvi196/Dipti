@@ -1,0 +1,21 @@
+class Account {
+  double balance = 10000;
+}
+
+mixin InterestCalculator on Account {
+  void calculateInterest() {
+    double interest = balance * 5 / 100;
+
+    print("Account Balance: ₹$balance");
+    print("Interest Rate: 5%");
+    print("Interest: ₹$interest");
+  }
+}
+
+class MyAccount extends Account with InterestCalculator {}
+
+void main() {
+  MyAccount account = MyAccount();
+
+  account.calculateInterest();
+}
