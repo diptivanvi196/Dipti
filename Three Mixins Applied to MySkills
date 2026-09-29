@@ -1,0 +1,27 @@
+mixin Coding {
+  void codingSkill() {
+    print("I have a skill in Coding.");
+  }
+}
+
+mixin Drawing {
+  void drawingSkill() {
+    print("I have a skill in Drawing.");
+  }
+}
+
+mixin Cooking {
+  void cookingSkill() {
+    print("I have a skill in Cooking.");
+  }
+}
+
+class MySkills with Coding, Drawing, Cooking {}
+
+void main() {
+  MySkills skills = MySkills();
+
+  skills.codingSkill();
+  skills.drawingSkill();
+  skills.cookingSkill();
+}
